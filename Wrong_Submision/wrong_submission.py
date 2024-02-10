@@ -1,3 +1,5 @@
+import sys
+
 class WrongSubstraction:
     
     def substraction(self,number,k) -> int:
@@ -10,7 +12,8 @@ class WrongSubstraction:
         
 if __name__=='__main__':
     
-    number = int(input())
-    k = int(input())
+    number, k = map(int, sys.stdin.readline().split())
+    
     sbc = WrongSubstraction()
+    
     print(sbc.substraction(number, k))
